@@ -1,4 +1,3 @@
-// eslint-disable jsx-props-no-spreading
 import React, { InputHTMLAttributes } from 'react';
 
 import { Container } from './styles';
