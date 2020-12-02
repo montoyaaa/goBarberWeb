@@ -31,6 +31,9 @@
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
     "arrow-parens": [2, "as-needed"],
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
