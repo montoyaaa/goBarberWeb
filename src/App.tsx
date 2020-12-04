@@ -4,7 +4,8 @@ import GlobalStyle from './styles/global';
 import SignIn from './pages/SignIn/index';
 import SignUp from './pages/SignUp/index';
 
-import { AuthProvider } from './context/AuthContext';
+import ToasContainer from './components/ToastContainer';
+import { AuthProvider } from './hooks/AuthContext';
 
 const App: React.FC = () => (
   <>
@@ -12,6 +13,8 @@ const App: React.FC = () => (
       <SignIn />
       <SignUp />
     </AuthProvider>
+
+    <ToasContainer />
     <GlobalStyle />
   </>
 );
