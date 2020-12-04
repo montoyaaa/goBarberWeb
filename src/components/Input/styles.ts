@@ -48,6 +48,8 @@ export const Container = styled.div<ContainerProps>`
     background: transparent;
     border: 0;
     color: #f4ede8;
+    -webkit-text-fill-color: #f4ede8;
+    box-shadow: 0 0 0px 1000px #232129 inset;
 
     &::placeholder {
       color: #666360;
