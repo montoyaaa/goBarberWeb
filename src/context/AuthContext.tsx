@@ -3,7 +3,7 @@ import api from '../services/api';
 
 interface AuthState {
   token: string;
-  user: string;
+  user: any;
 }
 
 interface SignInCredentials {
@@ -12,7 +12,7 @@ interface SignInCredentials {
 }
 
 interface AuthContextData {
-  user: string;
+  user: any;
   signIn(credentials: SignInCredentials): Promise<void>;
 }
 
@@ -33,7 +33,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    const response = await api.post<{ token: string; user: string }>(
+    const response = await api.post(
       'sessions',
       {
         email,
