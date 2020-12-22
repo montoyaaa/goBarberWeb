@@ -22,6 +22,7 @@
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
+    "arrow-body-style": 1,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
