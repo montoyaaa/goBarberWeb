@@ -1,12 +1,28 @@
 import React, { ButtonHTMLAttributes } from 'react';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
-import { Container } from './styles';
+import { Container, AiOutlineLoading3Quarters } from './styles';
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  loading?: boolean;
+};
 
-const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
+const style = {
+  fontSize: 40,
+  '@keyframes is-rotating': {
+    to: {
+      transform: 'rotate(1turn)',
+    },
+  },
+  animation: 'is-rotating 1s infinite',
+  paddingTop: 5,
+  top: 0,
+  left: 0,
+};
+
+const Button: React.FC<ButtonProps> = ({ children, loading, ...rest }) => (
   <Container type="button" {...rest}>
-    {children}
+    {loading ? <AiOutlineLoading3Quarters style={style} /> : children}
   </Container>
 );
 
