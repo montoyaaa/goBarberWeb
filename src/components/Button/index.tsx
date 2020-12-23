@@ -8,19 +8,16 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   // disabled?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({ children, loading, ...rest }) => {
-  return (
-    <Container type="button" disabled={loading} {...rest}>
-      {loading ? (
-        <AiOutlineLoading>
-          {' '}
-          <AiOutlineLoading3Quarters />{' '}
-        </AiOutlineLoading>
-      ) : (
-        children
-      )}
-    </Container>
-  );
-};
-
+const Button: React.FC<ButtonProps> = ({ children, loading, ...rest }) => (
+  <Container type="button" disabled={loading} {...rest}>
+    {loading ? (
+      <AiOutlineLoading>
+        {' '}
+        <AiOutlineLoading3Quarters />{' '}
+      </AiOutlineLoading>
+    ) : (
+      children
+    )}
+  </Container>
+);
 export default Button;
