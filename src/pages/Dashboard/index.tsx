@@ -40,8 +40,8 @@ const Dashboard: React.FC = () => {
             <img
               src={
                 user.avatar_url
-                  ? 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
-                  : user.avatar_url
+                  ? user.avatar_url
+                  : 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
               }
               alt="Avatar do usuário"
             />
@@ -97,8 +97,8 @@ const Dashboard: React.FC = () => {
                 <img
                   src={
                     user.avatar_url
-                      ? 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
-                      : user.avatar_url
+                      ? user.avatar_url
+                      : 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
                   }
                   alt="Avatar do usuário"
                 />
@@ -115,8 +115,8 @@ const Dashboard: React.FC = () => {
                 <img
                   src={
                     user.avatar_url
-                      ? 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
-                      : user.avatar_url
+                      ? user.avatar_url
+                      : 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
                   }
                   alt="Avatar do usuário"
                 />
@@ -136,8 +136,8 @@ const Dashboard: React.FC = () => {
                 <img
                   src={
                     user.avatar_url
-                      ? 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
-                      : user.avatar_url
+                      ? user.avatar_url
+                      : 'https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg'
                   }
                   alt="Avatar do usuário"
                 />
